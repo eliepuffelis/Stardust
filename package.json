@@ -1,0 +1,22 @@
+{
+  "name": "stardust",
+  "version": "1.0.0",
+  "description": "communication application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClaytonMatulich/Stardust.git"
+  },
+  "author": "Clayton Matulich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ClaytonMatulich/Stardust/issues"
+  },
+  "homepage": "https://github.com/ClaytonMatulich/Stardust#readme",
+  "dependencies": {
+    "electron": "^2.0.10"
+  }
+}
