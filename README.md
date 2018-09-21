@@ -1,3 +1,3 @@
 # Stardust
 
-We're at it yoy.
+Cross platform desktop communication app built with Electron.
