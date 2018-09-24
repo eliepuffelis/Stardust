@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ClaytonMatulich/Stardust#readme",
   "dependencies": {
-    "electron": "^2.0.10"
+    "electron": "^2.0.10",
+    "firebase": "^5.5.1"
   }
 }
