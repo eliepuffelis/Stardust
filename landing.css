@@ -1,10 +1,10 @@
-#wrapper{
+#wrapper {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 #authBox {
@@ -17,75 +17,178 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
-    
+    transition: ease 0.8s;
+    opacity: 0;
+    visibility: hidden;
 }
-#welcome{
-    width: 45%;
+
+#welcome {
+    width: 100%;
     height: 100%;
-    background-color: slategray;
+    background-color: slateblue;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+
+
 }
-.welcomeElements {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#welcomeText{
+
+
+
+#welcomeText {
     width: 85%;
-    height: 20%;
-    margin: 0;
+    height: 10%;
+    margin-bottom: 4%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 28px;
-    font-weight: bold;
     letter-spacing: 2px;
     color: white;
     padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
 
 }
-p{
+
+/* p {
     width: 85%;
-    height: 45%;
+    height: 25%;
     margin: 0;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+  
+    transition: width 1s ease-in-out;
     
 
-}
-#loginContainer{
-    width: 85%;
-    height: 40%;
+} */
+
+#loginContainer {
+    width: 100%;
+    height: 100%;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
 
 
 }
-#register{
-    width: 55%;
+
+.inviteText {
+    color: white;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+
+}
+
+#signUp {
+    border-bottom: 1px solid white;
+    padding-bottom: 4px;
+    cursor: pointer;
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: ease 0.3s;
+}
+#signUp:hover{
+    color: darkgray;
+    border-bottom-color: darkgray;
+}
+
+#register {
+    width: 0%;
     height: 100%;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
+    visibility: hidden;
+    transition: ease 0.3s;
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+    
+
 }
-#registerContainer{
+
+
+#registerContainer {
     width: 90%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
 }
 
-#registerText{
-    width: 85%;
-    height: 20%;
+#formOption1 {
+    width: 90%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+#formOption2 {
+    width: 90%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+.uk-margin{
     margin: 0;
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+
+#registerText {
+    width: 85%;
+    height: 10%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 28px;
     font-weight: bold;
@@ -93,10 +196,14 @@ p{
     color: darkslateblue;
     padding-top: 10px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
 }
+
 
 #signinButton {
     width: 30%;
@@ -105,47 +212,71 @@ p{
     border: 1px solid slateblue;
     background-color: transparent;
     color: slateblue;
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
     transition: 0.26s ease;
 }
+
 #signinButton:hover {
     background-color: slateblue;
-    color:white;
+    color: white;
+}
+
+#loginButton {
+    width: 18%;
+    height: 7%;
+    border-radius: 25px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    transition: 0.26s ease;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+    transition: ease 0.5s;
+}
+
+#loginButton:hover {
+    background-color: white;
+    color: slateblue;
 }
 
 
 
 
-html { 
-    background: url(images/landing.jpg) no-repeat center center fixed; 
+html {
+    background: url(images/landing.gif) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
+}
 
 
-  ::placeholder{
-      font-size: 10px;
-  }
+::placeholder {
+    font-size: 10px;
+}
 
-  .inputField {
-      border-radius: 25px;
-      transition: 0.26 ease;
-      width: 225px;
-      font-size: 10px;
+.inputField {
+    border-radius: 25px;
+    transition: 0.26 ease;
+    width: 225px;
+    font-size: 10px;
 
-  }
-  .inputField:hover{
-      border-color: slateblue;
-  }
-  .loginInputField{
+}
+
+.inputField:hover {
+    border-color: slateblue;
+}
+
+.loginInputField {
     border-radius: 25px;
     transition: 0.26 ease;
     width: 200px;
     font-size: 10px;
-  }
-  .loginInputField:hover{
-
-    border-color: black;
-    
-  }
+}
