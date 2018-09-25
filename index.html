@@ -1,25 +1,96 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Stardust</title>
-        <link rel="stylesheet" href="css/uikit.min.css" />
-        <link rel="stylesheet" href="landing.css">
-        <script src="js/uikit.min.js"></script>
-        <script src="js/uikit-icons.min.js"></script>
-        <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
-        <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css"/>
-    </head>
-    <body onload="animate()">
-        <div id="wrapper">
-            <img id="landingGif" src="images/landing.gif" alt="">
-            <div id="authContainer">
-                
+
+<head>
+    <meta charset="utf-8">
+    <title>Stardust</title>
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="landing.css">
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-box-shadow-large" id="authBox">
+            <div id="welcome">
+                <label id="welcomeText" class="welcomeElements">WELCOME</label>
+                <p class="welcomeElements">Message your friends all while having access to whatever the hell else we
+                    are making. </p>
+                <div id="loginContainer" class="welcomeElements">
+                    <form>
+                        <div class="uk-margin">
+                            <div class="uk-inline">
+                                <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                                <input class="uk-input uk-form-small" type="text" placeholder="email">
+                            </div>
+                        </div>
+
+                        <div class="uk-margin">
+                            <div class="uk-inline">
+                                <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                                <input class="uk-input uk-form-small" type="password" placeholder="password">
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
+
+
+            <div id="register">
+
+                <div id="registerContainer">
+                    <label id="registerText">REGISTER</label>
+                    <form>
+                        <div class="uk-margin">
+                            <div class="uk-inline">
+                                <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                <input class="uk-input uk-form-small" type="text" placeholder="username">
+                            </div>
+                        </div>
+
+                        <div class="uk-margin">
+                            <div class="uk-inline">
+                                <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                                <input class="uk-input uk-form-small" type="password" placeholder="email">
+                            </div>
+                        </div>
+
+                        <div class="uk-margin">
+                            <div class="uk-inline">
+                                <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                                <input class="uk-input uk-form-small" type="text" placeholder="email confirmation">
+                            </div>
+                        </div>
+
+                        <div class="uk-margin">
+                            <div class="uk-inline">
+                                <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                                <input class="uk-input uk-form-small" type="text" placeholder="password">
+                            </div>
+                        </div>
+
+                        <div class="uk-margin">
+                            <div class="uk-inline">
+                                <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                                <input class="uk-input uk-form-small" type="password" placeholder="password confirmation">
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+
         </div>
-       
-    </body>
-    <script>
-        require('./renderer.js');
-    </script>
+    </div>
+
+</body>
+<script>
+    require('./renderer.js');
+</script>
+
 </html>
