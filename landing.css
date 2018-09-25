@@ -9,7 +9,7 @@
 
 #authBox {
     width: 60%;
-    height: 40%;
+    height: 45%;
     background-color: whitesmoke;
     display: flex;
     justify-content: center;
@@ -98,7 +98,19 @@ p{
     align-items: center;
 }
 
-
+#signinButton {
+    width: 30%;
+    height: 8%;
+    border-radius: 25px;
+    border: 1px solid slateblue;
+    background-color: transparent;
+    color: slateblue;
+    transition: 0.26s ease;
+}
+#signinButton:hover {
+    background-color: slateblue;
+    color:white;
+}
 
 
 
@@ -113,5 +125,27 @@ html {
 
 
   ::placeholder{
-      font-size: 12px;
+      font-size: 10px;
+  }
+
+  .inputField {
+      border-radius: 25px;
+      transition: 0.26 ease;
+      width: 225px;
+      font-size: 10px;
+
+  }
+  .inputField:hover{
+      border-color: slateblue;
+  }
+  .loginInputField{
+    border-radius: 25px;
+    transition: 0.26 ease;
+    width: 200px;
+    font-size: 10px;
+  }
+  .loginInputField:hover{
+
+    border-color: black;
+    
   }
