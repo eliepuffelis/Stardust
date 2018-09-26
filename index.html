@@ -83,8 +83,8 @@
                         
                         <div class="uk-margin" >
                             <div class="uk-inline" style="margin-bottom: 13%">
-                                <span class="uk-form-icon" uk-icon="icon: check" style="color: rgb(1, 194, 7)"></span>
-                                <input class="uk-input uk-form-small inputField" type="password" placeholder="password confirmation" required >
+                                <span id="checkmark" class="uk-form-icon" uk-icon="icon: check"></span>
+                                <input id="registerPasswordConfirmationField" class="uk-input uk-form-small inputField" type="password" placeholder="password confirmation" required onkeyup="check();">
                             </div>
                         </div>
                         <button type="submit" id="signUpButton">Sign Up</button>

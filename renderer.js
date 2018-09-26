@@ -41,7 +41,8 @@ loginButton.addEventListener('click', function(){
     var loginPasswordField = document.getElementById('loginPasswordField').value;
 
     firebase.auth().signInWithEmailAndPassword(loginEmailField, loginPasswordField).then(function () {
-        // document.location.href = "signInPassed.html";
+        // Go to next page upon successful login
+        // document.location.href = "signInPassed.html";    
     }).catch(function (error) {
         if (error != null) {
             console.log(error.message);

@@ -34,3 +34,17 @@ function showRegistration(){
     var register = document.getElementById("register"); 
     register.style.visibility = 'visible';
 }
+
+function check(){
+    if(document.getElementById("registerPasswordField").value == 
+        document.getElementById("registerPasswordConfirmationField").value){
+        document.getElementById("checkmark").style.color = 'rgb(1, 194, 7)';
+    }
+    else{
+
+        var checkmark = document.getElementById("checkmark")
+        checkmark.style.color = 'red';
+        document.getElementById("checkmark").UIkit.icon('.checkmark', {icon: close});    
+    }
+        
+}
