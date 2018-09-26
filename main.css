@@ -38,7 +38,8 @@ h4{
     color: white;
     background-color: transparent;
     letter-spacing: 2px;
-    margin: 5px 0;
+    margin-top: 5px;
+    margin-bottom: 40px;
     font-weight: normal;
     letter-spacing: 2.5px;
 }
