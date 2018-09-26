@@ -79,4 +79,4 @@ function writeUserData() {
     } else {
         console.log("User NOT CREATED! User is NULL")
     }
-}
+} 

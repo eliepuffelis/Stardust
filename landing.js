@@ -6,8 +6,6 @@ function showAuthBox(){
     var stardustHeader = document.getElementById("stardustHeader");
     authBox.style.visibility = 'visible';
     authBox.style.opacity = '1';
-    stardustHeader.style.visibility = 'visible';
-    stardustHeader.style.opacity = '1';
 }
 
 function slideRegistration(){
