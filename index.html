@@ -76,7 +76,7 @@
                         <div class="uk-margin">
                             <div class="uk-inline">
                                 <span class="uk-form-icon" uk-icon="icon: lock" ></span>
-                                <input id="registerPasswordField" class="uk-input uk-form-small inputField" type="password" placeholder="password" required>
+                                <input id="registerPasswordField" class="uk-input uk-form-small inputField" type="password" placeholder="password"  onkeyup="check();" required>
                             </div>
                         </div>
 
@@ -84,10 +84,10 @@
                         <div class="uk-margin" >
                             <div class="uk-inline" style="margin-bottom: 13%">
                                 <span id="checkmark" class="uk-form-icon" uk-icon="icon: check"></span>
-                                <input id="registerPasswordConfirmationField" class="uk-input uk-form-small inputField" type="password" placeholder="password confirmation" required onkeyup="check();">
+                                <input id="registerPasswordConfirmationField" class="uk-input uk-form-small inputField" type="password" placeholder="password confirmation" required  onkeyup="check();" onmouseout="lastRegisterFieldOut()" onmouseover="lastRegisterFieldOn()">
                             </div>
                         </div>
-                        <button type="submit" id="signUpButton">Sign Up</button>
+                        <a href="secondPage.html" id="signUpButton">Sign Up</a>
                     </form>
                     
                 </div>

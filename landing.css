@@ -209,11 +209,14 @@ html {
     -o-transition: width 1s ease-in-out;
     transition: width 1s ease-in-out;
 }
+#checkmark {
+    transition: ease 0.3s;
+}
 
 
 #signUpButton {
     width: 35%;
-    height: 12%;
+    height: 11.5%;
     border-radius: 25px;
     border: 1px solid slateblue;
     background-color: transparent;
@@ -223,9 +226,15 @@ html {
     -o-transition: width 1s ease-in-out;
     transition: width 1s ease-in-out;
     transition: 0.26s ease;
+    text-decoration:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
     
     
 }
+
 
 #signUpButton:hover {
     background-color: slateblue;
@@ -233,8 +242,8 @@ html {
 }
 
 #loginButton {
-    width: 20%;
-    height: 8%;
+    width: 18.5%;
+    height: 8.5%;
     border-radius: 25px;
     border: 1px solid white;
     background-color: transparent;
