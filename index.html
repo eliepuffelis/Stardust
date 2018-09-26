@@ -20,7 +20,8 @@
 
 <body onload="delayAuthBox()">
     <div id="wrapper">
-
+    
+        
         <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-box-shadow-large" id="authBox">
             <div id="welcome">
 
@@ -59,14 +60,14 @@
                         <div class="uk-margin">
                             <div class="uk-inline" >
                                 <span class="uk-form-icon" uk-icon="icon: user"></span>
-                                <input  class="uk-input uk-form-small inputField" type="text" placeholder="username" >
+                                <input  class="uk-input uk-form-small inputField" type="text" placeholder="username" required>
                             </div>
                         </div>
 
                         <div class="uk-margin" >
                             <div class="uk-inline">
                                 <span class="uk-form-icon" uk-icon="icon: mail"></span>
-                                <input id="registerEmailField" class="uk-input uk-form-small inputField" type="text" placeholder="email">
+                                <input id="registerEmailField" class="uk-input uk-form-small inputField" type="text" placeholder="email" required>
                             </div>
                         </div>
 
@@ -74,19 +75,21 @@
 
                         <div class="uk-margin">
                             <div class="uk-inline">
-                                <span class="uk-form-icon" uk-icon="icon: lock"></span>
-                                <input id="registerPasswordField" class="uk-input uk-form-small inputField" type="password" placeholder="password">
+                                <span class="uk-form-icon" uk-icon="icon: lock" ></span>
+                                <input id="registerPasswordField" class="uk-input uk-form-small inputField" type="password" placeholder="password" required>
                             </div>
                         </div>
 
+                        
                         <div class="uk-margin" >
-                            <div class="uk-inline">
-                                <span class="uk-form-icon" uk-icon="icon: lock"></span>
-                                <input class="uk-input uk-form-small inputField" type="password" placeholder="password confirmation">
+                            <div class="uk-inline" style="margin-bottom: 13%">
+                                <span class="uk-form-icon" uk-icon="icon: check" style="color: rgb(1, 194, 7)"></span>
+                                <input class="uk-input uk-form-small inputField" type="password" placeholder="password confirmation" required >
                             </div>
                         </div>
+                        <button type="submit" id="signUpButton">Sign Up</button>
                     </form>
-                    <button id="signUpButton">Sign Up</button>
+                    
                 </div>
             </div>
 

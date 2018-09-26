@@ -1,24 +1,31 @@
 function delayAuthBox(){
-    setTimeout(showAuthBox, 1500);
+    setTimeout(showAuthBox, 0600);
 }
 function showAuthBox(){
     var authBox = document.getElementById("authBox");
+    var stardustHeader = document.getElementById("stardustHeader");
     authBox.style.visibility = 'visible';
     authBox.style.opacity = '1';
+    stardustHeader.style.visibility = 'visible';
+    stardustHeader.style.opacity = '1';
 }
 
 function slideRegistration(){
     var welcome = document.getElementById("welcome");
+    var welcomeText = document.getElementById("welcomeText");
     var register = document.getElementById("register");
     var loginButton = document.getElementById("loginButton");
     welcome.style.left = '0';
     welcome.style.right = '60%';
     welcome.style.width = '40%';
+    welcome.style.borderTopRightRadius = '0';
+    welcome.style.borderBottomRightRadius = '0'; 
+    welcomeText.style.marginBottom = '5%'; 
     register.style.width = '60%';
-    loginButton.style.width = '40%';
-    loginButton.style.marginBottom = '7%';
-    loginButton.style.marginTop = '10%';
-    loginButton.style.height = '8%';
+    loginButton.style.width = '135px';
+    loginButton.style.marginBottom = '25px';
+    loginButton.style.marginTop = '20px';
+    loginButton.style.height = '34px';
     
     setTimeout(showRegistration, 0700);
 
